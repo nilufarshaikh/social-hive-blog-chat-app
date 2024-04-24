@@ -1,66 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel Blog and Chat App with Node.js
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## Description:
+This repository contains a Laravel application for a Blog CRUD functionality with a real-time chat application with Node.js integration. This project is a code-along learning project from the [Let's Learn Laravel: A Guided Path For Beginners](https://www.udemy.com/course/lets-learn-laravel-a-guided-path-for-beginners) Udemy course.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Laravel and Node.js Chat App with Blog Posts CRUD
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Description:
+This repository contains a Laravel and Node.js application for a real-time chat application with blog posts CRUD functionality, user authentication, access control, and email features. The application allows users to chat with each other in real-time using Pusher for WebSocket-based communication, create, read, update, and delete blog posts, and manage user access with authentication.
 
-## Learning Laravel
+## Features:
+- Blog posts CRUD (Create, Read, Update, Delete)
+- Real-time chat functionality with Pusher for WebSocket-based communication
+- User authentication and authorization
+- Access control for different user roles (e.g., admin, user)
+- Follow user functionality
+- Search functionality
+- Cache functionality
+- Email functionality for site recap and new post notifications
+- API Authentication
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Technologies Used:
+- Laravel
+- PHP
+- MySQL
+- Blade Template engine
+- Node.js
+- Pusher (for real-time communication)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Installation:
+1. Clone this repository to your local machine.
+`git clone https://github.com/nilufarshaikh/laravel-chat-application.git`
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. Navigate to the project directory.
+`cd laravel-chat-application`
 
-## Laravel Sponsors
+3. Install composer dependencies.
+`composer install`
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4. Create a copy of the `.env.example` file and rename it to `.env`.
+`cp .env.example .env`
 
-### Premium Partners
+5. Generate the application key.
+`php artisan key:generate`
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+6. Set up your pusher, mailer and database configuration in the `.env` file.
 
-## Contributing
+7. Run database migrations.
+`php artisan migrate`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+8. Install Node.js dependencies.
+`npm install`
 
-## Code of Conduct
+9. Build and run the NPM server.
+`npm run build`
+`npm run dev`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+10. Serve the Laravel application.
+`php artisan serve`
 
-## Security Vulnerabilities
+11. Open your web browser and navigate to http://localhost:8000 to view the app.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Usage:
+1. Run to clear cache: 
+`php artisan cache:clear`
 
-## License
+2. Run to send created post emails:
+`php artisan queue:work`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+3. Run to send Recap site email:
+`php artisan schedule:work`
+
+## Resources:
+[Official Laravel Documentation](https://laravel.com/docs/)
+[Let's Learn Laravel: A Guided Path For Beginners](https://www.udemy.com/course/lets-learn-laravel-a-guided-path-for-beginners) by Brad Schiff
+
+---
