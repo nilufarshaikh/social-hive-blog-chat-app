@@ -76,6 +76,7 @@ This repository contains a Laravel and Node.js application for a real-time chat 
 
 ## Resources:
 [Official Laravel Documentation](https://laravel.com/docs/)
+
 [Let's Learn Laravel: A Guided Path For Beginners](https://www.udemy.com/course/lets-learn-laravel-a-guided-path-for-beginners) by Brad Schiff
 
 ---
