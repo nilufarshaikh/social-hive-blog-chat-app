@@ -4,7 +4,7 @@
 
 ## Description:
 
-This repository contains a Laravel application for a Blog CRUD functionality with a real-time chat application with Node.js integration. This project is a code-along learning project from the [Let's Learn Laravel: A Guided Path For Beginners](https://www.udemy.com/course/lets-learn-laravel-a-guided-path-for-beginners) Udemy course.
+This repository contains a Laravel application for a Blog CRUD functionality with a real-time chat application with Node.js integration.
 
 ## Features:
 
@@ -75,7 +75,5 @@ This repository contains a Laravel application for a Blog CRUD functionality wit
 ## Resources:
 
 [Official Laravel Documentation](https://laravel.com/docs/)
-
-[Let's Learn Laravel: A Guided Path For Beginners](https://www.udemy.com/course/lets-learn-laravel-a-guided-path-for-beginners) by Brad Schiff
 
 ---
