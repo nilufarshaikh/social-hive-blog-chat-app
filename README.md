@@ -1,7 +1,5 @@
 # Laravel and Node.js Chat App with Blog Posts CRUD
 
----
-
 ## Description:
 
 This repository contains a Laravel application for a Blog CRUD functionality with a real-time chat application with Node.js integration.
@@ -75,5 +73,3 @@ This repository contains a Laravel application for a Blog CRUD functionality wit
 ## Resources:
 
 [Official Laravel Documentation](https://laravel.com/docs/)
-
----
